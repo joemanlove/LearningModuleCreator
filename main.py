@@ -31,10 +31,19 @@ with open(INPUT_FILE_PATH, "r") as read_file:
 
 
 with open(TEX_OUTPUT_PATH, 'w') as file:
-    print("% Start of code generated using module_maker.py\n", file=file)
+    print("% Start of code generated using Learning Module Creator\n", file=file)
     i = 1
     for datum in data:
         # print(datum)
         module = Module(**datum)
         module.latex(file, i)
+        i += 1
+
+with open(HTML_OUTPUT_PATH, 'w') as file:
+    print("<!-- Start of code generated using Learning Module Creator -->\n", file=file)
+    i = 1
+    for datum in data:
+        # print(datum)
+        module = Module(**datum)
+        module.html(file, i)
         i += 1

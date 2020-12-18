@@ -35,6 +35,24 @@ class Module:
             self.work_latex(file)
         self.footer_latex(file, index)
 
+    def html(self, file, index):
+        """
+        HTML code generation, writes html code for the module assuming that the module is week index.
+        Helper functions include tab generation to create readable code.
+        Note, the latex code in the advice section will not render automatically with html at this time.
+        Arguments:
+            file - a file stream for the output
+            index - integer for the week of the module
+        """
+        self.header_html(file, index)
+        if self.readings:
+            self.readings_html(file)
+        if self.advice:
+            self.advice_html(file)
+        if self.work:
+            self.work_html(file)
+        self.footer_html(file, index)
+
     def header_latex(self, file, index):
         """Helper function for latex method. Generates header."""
         print("% <------------" + f"{self.name} Begins Here" + "------------>\n", file=file)
@@ -71,3 +89,23 @@ class Module:
         for key, value in self.work.items():
             print('\t' * 3 + r"\item " + f"In section {key}, please do problems {value}.", file=file)
         print('\t' * 2 + r"\end{itemize}" + '\n', file=file)
+
+    def header_html(self, file, index):
+        """Helper function for html method. Generates header."""
+        print(f'HTML header for Module {index}')
+
+    def footer_html(self, file, index):
+        """Helper function for html method. Generates footer."""
+        print(f'HTML footer for Module {index}')
+
+    def readings_html(self, file):
+        """Helper function for latex method. Generates readings statement."""
+        print('HTML readings')
+
+    def advice_html(self, file):
+        """Helper function for latex method. Generates itemized advice."""
+        print('HTML advice')
+
+    def work_html(self, file):
+        """Helper function for latex method. Generates itemized work assignments."""
+        print('HTML work')
