@@ -1,0 +1,369 @@
+[
+{
+    "name": "Introduction to Vectors",
+    "readings": [
+        1.1,
+        1.2,
+        1.3
+    ],
+    "advice": [
+        "The picture for problem 1.1 23 is on the previous page.",
+        "The whole course is about linear combinations and vectors, don't slack off here.",
+        "It might be a legit idea to do all the problems in this seciton.",
+        "The other book chooses to delay discussions of dot products until very late. I personally believe this is a mistake.",
+        "Do the worked out examples and try not to look at the solution key until you've actually worked on a problem for a bit.",
+        "Answers don't count for much, explanations are where all the points are, so get used to writing out your thoughts for each step.",
+        "You should be explaining at a level your fellows would understand.",
+        "1.2 numbers 26 and 27 are meant to be a single problem.",
+        "Problems 4 and 5 in 1.3 are the heart of the subject. Problem 4 is the 'Column multiplication picture' and problem 5 is the 'row multiplication picture'.",
+        "For problem 7 in 1.3, the xs are unknown but fixed values, first assume that they aren't 0. After you're done, consider the possiblity that the xs in  are 0, is the conclusion wrong? ",
+        "Hints for problems 4 and 5 from 1.3 can be found by reading 2.1."
+    ],
+    "work": {
+        "1.1": "1, 3, 4, 6, 9, 11, 13, 18, 23, 26-29, and 31",
+        "1.2": "1, 2, 6, 10, 13, 16, 20, 26/27 (these are a single problem), 29, 30 ",
+        "1.3":"1, 2-6, 7, 14"
+    }
+},
+{
+    "name": "Systems and Elimination",
+    "readings": [
+        2.1,
+        2.2,
+        2.3
+    ],
+    "advice": [
+        "The two pictures (column and row) in section 2.1 are the first step towards understanding the picture on the front of the book.",
+        "They're two sides of the same thought, but seem very different.",
+        "If you solve something using one of them consider trying it with the other. It won't always work, but it is good to consider.",
+        "A matrix is a function. An $m\\times n$ matrix is a function from the n dimensional real numbers to the m dimensional real numbers.",
+        "Elimination matricies are fairly tough, I'm keeping the assingments in 2.2 and 2.3 a little light.",
+        "For number 20 in 2.2, to see the three planes described at the beginning, make a triangular tube out of a piece of paper.",
+        "For number 32 in 2.2, you should use some ..., don't fill a page with numbers.",
+        "The answer key answer for number 32 part d is describing the row and column spaces for the second matrix they describe in part c, not the first one.",
+        "Problem 28 in section 2.3 is fairly tough to do without a hint, but it's really simple with one. For reference the 'associative law' is on page 61."
+    ],
+    "work": {
+        "2.1":"1, 4-13, 15-17, 19, 20, 22, 26, 28, 31",
+        "2.2":"3, 4-6, 11, 13, 20, 24, 32",
+        "2.3":"1-3, 6, 7, 12, 13, 16, 17, 19, 24, 27, 28"
+    }
+},
+{
+    "name":"Matrix Operations and Inverses",
+    "readings": [
+        2.4,
+        2.5
+    ],
+    "advice": [
+        "It is incredibly important that you know that matricies don't commute.",
+        "$AB$ is NOT generally $BA$.",
+        "Even if $AB$ is $BA$, this doesn't mean that $A$ or $B$ commute with pretty much anything else.",
+        "Matrix multiplication is function composition, which is why it's not commutative.",
+        "Exponents (repeated application of the matrix) have the usual rules.",
+        "Matricies are 'linear', meaning (for vectors $x$ and $y$, matrix $A$ and scalar $c$) $A(x+y) = Ax+Ay$ and $Acx = cAx$",
+        "The worked example 2.4B illustrates some important concepts.",
+        "Functions are only invertible if they're one to one.",
+        "The good old horizontal line test is checking this. Specifically, we need to check if there are two inputs that give us the same output.",
+        "For a regular function $f(x)$, this looks like a pair of $a$ and $b$ with $a != b$ and $f(a) = f(b)$.",
+        "In the special case of a matrix, this would look like $x$ and $y$ with $x != y$ and $Ax = Ay$. Because we know $A$ is linear, we can rearrange this to $Ax-Ay=0$, which can be further rearranged into $A(x - y) =0$.",
+        "Ultimately, a matrix fails to be invertible if there is a nonzero vector $x$ with $Ax=0$. This will keep coming back up.",
+        "The determinant gets a casual mention in this section, some approaches to this topic focus almost exclusively on the determinant. Those appraches are less effective in my opinion, but they do exist.",
+        "Worked example 2.5B is a pretty crucial concept, expect to use this repeatedly.",
+        "Order Matters. A supervising professor of mine wrote a precalculus book that had this phrase bolded every other paragraph or so. We made fun of it a bit, but it turns out it's just super solid life advice."
+    ],
+    "work": {
+        "2.4": "1-3, 5-7, 11, 15, 22, 23, 32, 34",
+        "2.5": "1, 2, 7-9, 11, 12, 15, 18, 22, 29, 30, 39"
+    }
+},
+{
+    "name": "LU Factorization and Transposes",
+    "readings": [
+        2.5,
+        2.6
+    ],
+    "advice": [
+        "Factorization seems fairly silly, but as we develop this area, we'll find it increasingly useful.",
+        "Linear algebra calculations are crucial to a large number of computer systems. Keeping those computer systems efficient is a huge task and factorizations often let us cut large amounts of calculations.",
+        "Those of you who took Calc 3 will recall how totally crucial dot products were. It will come as no surprise that dot products are crucial here.",
+        "Transpose matricies let us capture some of that utility for a more general application.",
+        "Transpose matricies will continue to be seen throughout the class. In fact, they're crucial to understanding the cover art.",
+        "The transpose of a matrix $A$ can also be thought of as $A$ flipped across the main diagonal.",
+        "A somewhat useful notational trick is to recognize $(Ax)\\cdot y = (Ax)^Ty = x^TA^Ty = x\\cdot A^Ty$. ",
+        "There's some discussion of this idea on page 121 with respect to derivatives."
+    ],
+    "work": {
+        "2.6": "1, 2, 5-8, 12, 13",
+        "2.7": "1-4, 7bcd, 9, 10, 13a, 16, 17a, 28, 30, 37, 39"
+    }
+},
+{
+    "name": "Midterm 1 and Vector Spaces",
+    "readings": [
+        3.1
+    ],
+    "advice": [
+        "Fully explain all of your answers to the test. There's no credit for solutions without explanation.",
+        "Explanations should cite facts from the book by page number and location. For example, 'top of page 123' or 'eqn (2) on page 123'.",
+        "Justification should be provided for each step.",
+        "You get credit for sound mathematical reasoning and careful explanation.",
+        "Your explanations should be aimed at your peers level, not at me or Prof. Strang.",
+        "Tests are assumed to be open book and notes, but are individual assessments.",
+        "Please don't collaborate on tests.",
+        "After you've finished your test, take on section 3.1.",
+        "Section 3.1 is crucial, be sure to devote adequate time to it.",
+        "A real vector space is a set of vectors and a pair of operations 'vector addition' and 'scalar multiplication' that is closed (see top of p125) under both operations and satisfys items (1) - (8) on p130.",
+        "Vectors in these vector spaces do not need to look like the usual vectors in $\\mathbb{R^n}$.",
+        "Vector addition and scalar multiplication are not always definied in the usual way.",
+        "The 'zero vector' need not actually be 0. See problem 3.",
+        "Vector multiplication is rarely defined. (Dot and cross product aren't really multiplication.) Vector division is almost never defined, with the notable exceptions of $\\mathbb{R^1}$ and $\\mathbb{C}$.",
+        "If the homework in section 3.1 seems easy, you're either doing it wrong or you're ready for higher math.",
+        "The column space of a matrix is a critical concept moving forward, don't neglect it.",
+        "There is at least one column space in the cover art.",
+        "The symbol $\\cup$ is called the 'union'. $S\\cup T$ is the set of all things that are in $S$ or in $T$. For example $\\{1,2,3\\} \\cup \\{2,4,6 \\} = \\{1,2,3,4,6 \\}$.",
+        "The symbol $\\cap$ is called the 'intersection'. $S\\cap T$ is the set of all things that are in both $S$ and $T$. For example $\\{1,2,3\\} \\cap \\{2,4,6 \\} = \\{2 \\}$.",
+        "There will be several important subspaces associated to a matrix, all of which are the span of a set of vectors. The concept of span becomes more important as we proceed.",
+        "'Subspaces are flat.' Consider this statement carefully and see if you can justify it."
+    ],
+    "work": {
+        "3.1": "1-11, 14, 15, 17, 19, 22-24, 30"
+    }
+},
+{
+    "name": "Nullspaces and Complete Solutions",
+    "readings": [
+        3.2,
+        3.3
+    ],
+    "advice": [
+        "The rank of a matrix is very important, it's the dimension of the image (also called the range).",
+        "The lines on the top of p140 shouldn't be ignored, they're going to be used alot.",
+        "We kinda lied to you about domains and ranges. Let's clear that up a little bit. The domain of a function is the set of valid inputs, the range is the set of all outputs, and a third set called the 'codomain' is the space containing the range.",
+        "For example, consider the matrix $A = \\begin{bmatrix} 1 & 0 & 0\\\\ 0 & 0 &0 \\end{bmatrix}$. This function has a domain of $\\mathbb{R^3}$, a range of $\\text{span}\\begin{bmatrix} 1\\\\0 \\end{bmatrix}$, and a codomain of $\\mathbb{R^2}$.",
+        "The Counting Theorem on p140 and in problem 4 is crucial to the sizes of the boxes on the cover art.",
+        "Problems 48-50 are important, but conceptually hard and the solution manual explanations are a bit short in my opinion. Please make your explanations more complete. For problem 49, you may use that $rank(A) = rank(A^T)$ for any matrix $A$.",
+        "It's sometimes said that mathematicians really only use three numbers, 0, 1, and $\\infty$. This section illustrates the truth of that.[:)]",
+        "All of this section basically rests on the idea that $Ax= b$ is equivalent to $A(x_p+x_s) = Ax_p +Ax_s = b + 0$.",
+        "Now you can probably explain why the cover art contains $Ay = b$, $y=x+z$, $Ax= b$, and $Az=0$. If you'd like to check your understanding, please explain it on your coversheet for this module."
+    ],
+    "work": {
+        "3.2": "1, 2, 4, 5, 8, 9, 12, 16, 20-22, 24a, 29, 33, 39, 41, 48-50.",
+        "3.3": "3, 4, 6, 10, 11, 12, 13, 22, 24, 31, 34ac"
+    }
+},
+{
+    "name": "Dimensions",
+    "readings": [
+        3.4,
+        3.5
+    ],
+    "advice": [
+        "Other dimensions, not quite what sci-fi makes them out to be eh?",
+        "I'd prefer if the author refered to sets of vectors being linearly independant rather than sequences of vectors because the ordering is not important.",
+        "No set containing the zero vector can be linearly independent.",
+        "The geometry of independence is a good intuition to have.",
+        "A space or subspace will have a great many possible basis sets to choose from.",
+        "Function spaces are super cool.",
+        "The zero vector space (only the zero vector) is a little confusing, because it is dimension 0 and its basis is the empty set (the set of no vectors). See top of p. 172.",
+        "Spans of sets are subspaces and subspaces are flat.",
+        "For problem 3.4 45, you'll probably want to consider a basis for each V and W.",
+        "3.5, the big picture! Here we go, time to think about those rectangles in the cover art!",
+        "Remember problems 48-50 in the nullspace section? The results are summarized again in Wroked Example 3.5B.",
+        "Personally, I tend to say 'the nullspace of A transpose' rather than 'left nullspace of A'. Perhaps this is a personality deficit, but I prefer to think of $A$ as a map from left to right of the Big Picture and $A^T$ as a map from right to left.",
+        "The Fundamental Theorem and the Big Picture in this section are the foundations of linear algebra. Everything before this was roughly so that you could understand this, and everything after it is basically a consequence of it. Frankly, this section is the subject of Linear Algebra.",
+        "All the mysteries of the cover art are not yet solved, but this should clarify a great deal of it.",
+        "There is an element that could be added to the cover art involving the dimensions of the spaces, what is it?"
+    ],
+    "work": {
+        "3.4": "1, 2, 5, 8, 9, 11, 15, 16, 24, 26, 31, 32, 35, 38, 45",
+        "3.5": "1, 2, 4, 5, 6, 10, 11, 13ab, 16, 24, 29"
+    }
+},
+{
+    "name": "Orthogonality and Projections",
+    "readings": [
+        4.1,
+        4.2
+    ],
+    "advice": [
+        "Orthogonal complements, super cool and also maybe you realized this a long time ago. Some folks do, usually because they notice that a vector in the nullspace must be perpendicular to the rows and the two spaces dimensions add to the domains.",
+        "More Big Picture! On p 198 you can see a possible subtle change to the cover art. See how the Nullspaces are different sizes, but the row and col spaces are the same size? This is what I was asking for in the last module.",
+        "The decomposition on page 199 ($x = x_r + x_n$) is somewhat surprising and also cool. It's the $y = x+z$ from the cover art.",
+        "Worked Example 4.1A is a good understanding check.",
+        "Problems 6 and 7 in 4.1 are not required, but if you're interested in applied math, the Fredholm Alternative makes several appearances.",
+        "Problem 4.1 9 will come up again in the next couple sections, keep your eye on it.",
+        "Students comfortable with calc 3 may prefer to phrase one dimensional projections in terms of dot products, but rephrasing in terms of transposes will let us lift this idea to matricies in general.",
+        "Projection matricies onto the axises or coordinate planes are a useful tool in a number of contexts. The vast majority of applications of matricies outside of Linear Algebra utilize either projection or rotation matricies.",
+        "To make the projection matrix on page 208 sound as fancy as possible, you can refer to it as the outside-in product of a with itself. This isn't serious, but you might notice that the top is the outer product of a with a and the bottom is the inner product of a with a.",
+        "Be careful, order matters.",
+        "$A^TA$ is invertible if A has linearly indep columns, but in this context A is rectanglular, therefore not invertible.",
+        "$P^2 = P$ is sometimes taken to be the definition of a projection, you might convince yourself that this makes sense. It'll be the focus of some problems.",
+        "Notice that there's a picture for problem 5.",
+        "If you have extra time, question 34 is cool and doesn't have an answer in the solutions. Perhaps you can prove this."
+    ],
+    "work": {
+        "4.1": "1-4, 5a, 9-11, 13, 16(See page 195 for (2)), ",
+        "4.2": "1, 3, 5, 8, 11-13, 17, 18, 21, 22, 23, 24, 25, 32, 34 optional"
+    }
+},
+{
+    "name": "Least Squares and Gram-Schmidt",
+    "readings": [
+        4.3,
+        4.4
+    ],
+    "advice": [
+        "Least Squares regression is probably the most common statistics tool.",
+        "The exceptionally cool thing about this section is that we learn that least squares lines aren't really any easier (in theory) than any other least squares polynomial fit.",
+        "All of this is a little contrived by hand. Programming a computer to do this quickly is super easy.",
+        "Our usual basis is an orthonormal basis, and the desire to go back to it or think in terms of it should motivate us to find more othornormal basises.",
+        "The rotation matricies mentioned in Example 1 are a very common tool.",
+        "Notice that orthogonal matricies are square.",
+        "Careful, there are permutation matricies in this section, don't get them mixed up with projections.",
+        "Squaring problem 4b and problem 10 in 4.4 seems like a tall order. Why are both possible? Read carefully."
+    ],
+    "work": {
+        "4.3": "1-3, 5, 9, 10, 17, 20, 21, 25",
+        "4.4": "1, 2, 4bc, 5, 10, 11, 13, 17, 18, 20, 21, 22"
+    }
+},
+{
+    "name": "Test 2 and Determinants",
+    "readings": [
+        5.1
+    ],
+    "advice": [
+        "Much of the advice I gave for the first test applies here, but I'm writing this before I've seen your first exams, so please bear in mind any advice I gave you upon the retrun of those tests.",
+        "Fully explain all of your answers to the test. There's no credit for solutions without explanation.",
+        "Explanations should cite facts from the book by page number and location. For example, 'top of page 123' or 'eqn (2) on page 123'.",
+        "Justification should be provided for each step.",
+        "You get credit for sound mathematical reasoning and careful explanation.",
+        "Your explanations should be aimed at your peers level, not at me or Prof. Strang.",
+        "Tests are assumed to be open book and notes, but are individual assessments.",
+        "Please don't collaborate on tests.",
+        "After you've finished your test, take on section 5.1.",
+        "Section 5.1 is crucial, be sure to devote adequate time to it.",
+        "IMPORTANT: Determinants are only defined for square matricies.",
+        "Many other texts devote a large portion of the start of this course to calculation of the determinant. Personally I find that approach to be boring, because I find calculation by hand to be boring. The determinant is so useful that it can't be ignored, so here we are.",
+        "A computer or a calculator is the right tool for finding a determinant. We'll do some by hand here, but it's not ideal.",
+        "In chapter 6 we'll end up doing more than a little calculation of determinants by hand. In realiztic applications, these are usually calculated using a computer.",
+        "The problems involving $A-\\lambda I$ are foreshadowing for chapter 6."
+    ],
+    "work": {
+        "5.1": "1-4, 6, 7 (only the first Q), 8,  10, 22, 23, 28"
+    }
+},
+{
+    "name": "Determinant Formulas",
+    "readings": [
+        5.2,
+        5.3
+    ],
+    "advice": [
+        "There are a ton of scary ass formulas in here. The cofactor formula is the one that gets the most use in real life.",
+        "Most of these calculations are done recursively on computers. Recursion is when a computer program starts another copy of itself, usually to do a smaller calculation and report back.",
+        "Notice that the cofactors switch signs.",
+        "Cofactors are especially useful when there are lots of zeros.",
+        "Problem 5.2 15 and 16 are a bit challenging to see because you have to go just a little deeper than you'd expect.",
+        "Cramer's Rule lends itself to computer calculation of matrix inverses because it involves no possibility of required row swapping.",
+        "It's straightforward execution is what makes it valuable, sadly it's not particularly easy to calculate unless you're a computer.",
+        "The area interpretations of the determinant should come as no surprise to those who took calc 3.",
+        "For those not having taken calc 3, the cross product is an important tool there for finding the areas of surfaces.",
+        "Example 6 is another perspective on double integration in polar coordinates. Anybody care to extrapolate to cylindrical or spherical?",
+        "You can skip 27 and 28 if you didn't take calc 3."
+    ],
+    "work": {
+        "5.2": "1, 3, 5, 7, 15, 16, 28, 34",
+        "5.3": "1a, 7, 11, 12, 16, 19, 20, 26, 27, 28, 31, 32, 36, 38"
+    }
+},
+{
+    "name": "Eigenvalues",
+    "readings": [
+        6.1,
+        6.2
+    ],
+    "advice": [
+        "Eigenvectors are directions where the matrix $A$ acts like scalar multiplication, the scalar it acts like is the eigenvalue.",
+        "I tend to refer to an eigenvector and its eigenvalue as an 'eigenpair'. I intentionally said 'eigenvector and its eigenvalue', because one eigenvalue may have a couple eigenvectors.",
+        "Eigenpairs have seemingly endless uses. In an upcoming section we'll see how they can solve differential equations.",
+        "Eigenpairs also appear in computer graphics, population modeling, dynamics, and a myriad of other applicaitons.",
+        "A Big Picture similar to the front of the book could be created for a two by two matrix with distinct eigenpairs.",
+        "Diagnalizing matricies is a major step in reducing computation time. Computation time of this form is the major cost associated to Machine Learning Algorithms, so reducing it is a major payoff.",
+        "The optional problems in 6.2 (8 and 10) deal with the Fibonacci numbers, You need not do problem 8 to do problem 10. You can do it simply with the recursive definition found in problem 16 on page 267.",
+        "Problem 6.2 26 is a callback to the Big Picture.",
+        "Problem 34 is really really cool. It couples a geometrically obvious fact with a neat proof in the complex numbers. I wonder if there's a proof available along a path of medium difficulty.",
+        "There is a great deal more to eigenvectors to explore including complex values and vectors, generalized eigenvectors, and some serious attempts to get eigenvalues with algebraic or geometric multiplicity greater than one to play nicely. Entire courses exist in these areas."
+    ],
+    "work": {
+        "6.1": "1, 2, 5, 6, 9, 10, 12, 14, 21, 25, 32, 37, 38",
+        "6.2": "1-4, 6, 7, 8 optional, 10 optional, 11, 14, 15, 26, 34"
+    }
+},
+{
+    "name": "Differential Equations and Symmetric Matricies",
+    "readings": [
+        6.3,
+        6.4
+    ],
+    "advice": [
+        "This isn't an entire course in differential equations, but this useful tool is such an easy pickup from where we are that it can't be ignored.",
+        "The definition of the word exponential is 'the rate of change is proportional to the amount'. Written symbolically, this is $y'(t) = ky(t)$.",
+        "Recall (or verify) the critcial fact: if $y'(t) = ky(t)$ then $y(t) = Ae^{kt}$.",
+        "It drives me (and most mathematicians) nuts when people misuse the word 'exponential' to mean 'getting bigger'.",
+        "The concept of an exponential of a matrix is mindblowing, but also actually pretty easy. It can even be calculated without diagnalizing in the special case of a 'nilpotent' matrix. A matrix $A$ is called 'nilpotent' if there exists an integer $n$ such that $A^n =0$. You've encountered matricies like this before. A crowd favorite for this is in problem 11 and another is in 19 don't get fooled by this pattern, there are nilpotent matricies with entirely nonzero entries. Can you find one?",
+        "Symmetry is an incredibly powerful tool, because diagnalization is even easier.",
+        "Symmetric situations arise commonly in applications, so although it seems very niche, it's a pretty common scenario.",
+        "Some of the problems in this section are frustratingly simple, but hard to see.",
+        "Problems 12 and 24 are pretty tricky, don't feel badly if they are hard for you."
+    ],
+    "work": {
+        "6.3": "1-4, 8, 11-13, 21, 26, 31a, 32",
+        "6.4": "4, 6, 7, 10, 11, 12, 15, 20, 23, 24, 34"
+    }
+},
+{
+    "name": "Linear Transformations",
+    "readings": [
+        8.1,
+        8.2
+    ],
+    "advice": [
+        "It may seem obvious that matricies and linear transformations are linked, but that's not a given. Be careful to use only facts from the appropriate area.",
+        "You've been dealing with a great many linear transformations over the semester, so you should be getting pretty good at these kinds of things.",
+        "In section 8.2, we'll see that linear transformations can be represented with a matrix.",
+        "It should be apparent that $T(v) = Av$ is a linear transformation, some thoughts about this relationship are in problem 8.1 11. You might want to start 11 by showing that $T$ is a linear transformation.",
+        "Section 8.2 is the punchline for this course. It shows that Matricies are Linear Transformations and Linear Transformations are Matricies.",
+        "This means that everything we know about Matricies applies to Linear Transformations.",
+        "We now know alot about Matricies, but there are three big takeaways that incorporate almost all of the material. Those are the Big Picture, Determinants, and Eigenpairs.",
+        "In this last section, we also gain a thought about a tool we've been using all along. Diagonalization is really just a change of basis, this is intuitive, but also fantastic."
+    ],
+    "work": {
+        "8.1": "1-6, 8, 10, 11, 13, 17, 18, 20ab, 29ac, ",
+        "8.2": "1-7, 9, 10, 13, 14, 20-22, 26, 27, 34"
+    }
+},
+{
+    "name": "Review for Final Exam",
+    "readings": [
+        
+    ],
+    "advice": [
+        "Fully explain all of your answers to the test. There's no credit for solutions without explanation.",
+        "Explanations should cite facts from the book by page number and location. For example, 'top of page 123' or 'eqn (2) on page 123'.",
+        "Justification should be provided for each step.",
+        "You get credit for sound mathematical reasoning and careful explanation.",
+        "Your explanations should be aimed at your peers level, not at me or Prof. Strang.",
+        "Tests are assumed to be open book and notes, but are individual assessments.",
+        "Please don't collaborate on tests.",
+        "Excellent work making it to the end of the course. I can't imagine it's been an easy journey.",
+        "Thank you for putting in the effort for this class.",
+        "If you'd like something new to learn instead of reviewing, sections 6.5, 8.3, 10.4 and 10.5 all were close contenders for inclusion. 10.5 is probably the coolest of them.",
+        "As with the previous exams, clear explanations are the only thing worth points on the final.",
+        "Good Luck!"
+    ],
+    "work": {
+    }
+}
+]
