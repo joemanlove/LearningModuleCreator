@@ -2,7 +2,9 @@
 # Reads from a json file of modules and generates both latex and html code for copy pasting.
 # Designed December 2020 by Joe Manlove
 # Version 1.0 completed 12/11/2020, latex is properly generated in file.
-# Version 1.0.1 12/18/2020 better filepaths in preparation for html
+# Version 1.0.2 completed 12/18/2020, html is properly generated in file
+# todo Version 1.0.3 - make HTML generate a folder of files one for each module
+# todo Version 1.1 - User input for the file name
 
 
 import json
@@ -18,6 +20,7 @@ import os
 # path to directory containing script
 PATH = os.path.dirname(__file__) + '/'
 
+# change the input file name variable to the json you'd like to generate from
 INPUT_FILE_NAME = "linear_algebra.json"
 INPUT_FILE_PATH = PATH + INPUT_FILE_NAME
 OUTPUT_NAME = INPUT_FILE_NAME.replace(".json", '')
@@ -38,8 +41,12 @@ with open(TEX_OUTPUT_PATH, 'w') as file:
         module = Module(**datum)
         module.latex(file, i)
         i += 1
+    print("% End of code generated using Learning Module Creator\n", file=file)
 
+
+# single file generation
 with open(HTML_OUTPUT_PATH, 'w') as file:
+    # this is an HTML comment.
     print("<!-- Start of code generated using Learning Module Creator -->\n", file=file)
     i = 1
     for datum in data:
@@ -47,3 +54,4 @@ with open(HTML_OUTPUT_PATH, 'w') as file:
         module = Module(**datum)
         module.html(file, i)
         i += 1
+    print("<!-- End of code generated using Learning Module Creator -->\n", file=file)

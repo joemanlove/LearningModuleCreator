@@ -92,20 +92,36 @@ class Module:
 
     def header_html(self, file, index):
         """Helper function for html method. Generates header."""
-        print(f'HTML header for Module {index}')
+        print(f'<!-- Module {index} - {self.name} Begins Here -->', file=file)
+        print(f"<h2>Week {index} - {self.name}</h2>\n", file=file)
 
     def footer_html(self, file, index):
         """Helper function for html method. Generates footer."""
-        print(f'HTML footer for Module {index}')
+        print(f'<!-- End of Module {index} -->', file=file)
 
     def readings_html(self, file):
         """Helper function for latex method. Generates readings statement."""
-        print('HTML readings')
+        # readings header
+        print("\t<h3>Readings</h3>", file=file)
+        # readings statement
+        print('\t' * 2 + f"<p>Please read sections {comma_seperate_list(self.readings)}.</p>\n", file=file)
 
     def advice_html(self, file):
         """Helper function for latex method. Generates itemized advice."""
-        print('HTML advice')
+        # advice header
+        print("\t<h3>Words of Advice</h3>", file=file)
+        # itemized advice
+        print('\t' * 2 + "<ul>", file=file)
+        for item in self.advice:
+            print('\t' * 3 + f"<li>{item}</li>", file=file)
+        print('\t' * 2 + "</ul>\n", file=file)
 
     def work_html(self, file):
         """Helper function for latex method. Generates itemized work assignments."""
-        print('HTML work')
+        # work header
+        print("\t<h3>Work</h3>", file=file)
+        # itemized work list
+        print('\t' * 2 + "<ul>", file=file)
+        for key, value in self.work.items():
+            print('\t' * 3 + f"<li>In section {key}, please do problems {value}.</li>", file=file)
+        print('\t' * 2 + "</ul>\n", file=file)
