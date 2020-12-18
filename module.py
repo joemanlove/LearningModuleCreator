@@ -1,5 +1,6 @@
 from utilities import comma_seperate_list
 
+
 class Module:
     """
     Class representing a course module. Usually initialized with a json read.
@@ -33,16 +34,6 @@ class Module:
         if self.work:
             self.work_latex(file)
         self.footer_latex(file, index)
-
-    def html(self, file, index):
-        """
-        HTML code generation, writes html code for the module assuming that the module is week index.
-        Helper functions include tab generation to create readable code.
-        Note, the latex code in the advice section will not render automatically with html at this time.
-        Arguments:
-            file - a file stream for the output
-            index - integer for the week of the module
-        """
 
     def header_latex(self, file, index):
         """Helper function for latex method. Generates header."""
