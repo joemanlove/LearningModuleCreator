@@ -19,9 +19,12 @@ import os
 PATH = os.path.dirname(__file__) + '/'
 
 # change the input file name variable to the json you'd like to generate from
-INPUT_FILE_NAME = "linear_algebra.json"
-INPUT_FILE_PATH = PATH + INPUT_FILE_NAME
+INPUT_FILE_NAME = "linear_algebra/linear_algebra.json"
+INPUT_FILE_PATH = os.path.join(PATH, INPUT_FILE_NAME)
+
+# removes the json extension
 OUTPUT_NAME = INPUT_FILE_NAME.replace(".json", '')
+
 HTML_OUTPUT_PATH = PATH + OUTPUT_NAME + '.html'
 TEX_OUTPUT_PATH = PATH + OUTPUT_NAME + '.tex'
 
