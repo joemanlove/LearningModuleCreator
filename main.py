@@ -3,8 +3,6 @@
 # Designed December 2020 by Joe Manlove
 # Version 1.0 completed 12/11/2020, latex is properly generated in file.
 # Version 1.0.2 completed 12/18/2020, html is properly generated in file
-# todo Version 1.0.3 - make HTML generate a folder of files one for each module
-# todo Version 1.1 - User input for the file name
 
 
 import json
