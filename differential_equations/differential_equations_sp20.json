@@ -1,0 +1,27 @@
+[
+{
+    "name": "Linear First Order",
+    "videos": {
+        "What's a Differential Equation?":"https://youtu.be/MwRA6Jlw4WQ",
+        "Exponential Growth Population Model - Intro":"https://youtu.be/8WpanRkPXtU",
+        "Verification of Solutions - Example (Newton's Cooling)":"https://youtu.be/2WgMskR4_hs",
+        "First Order Linear Hom and Non - Vocab":"https://youtu.be/KOlnOVyD63I",
+        "First Order Linear Hom - General Technique":"https://youtu.be/RCZKR_uspoU",
+        "First Order Linear NonHom - Example":"https://youtu.be/DYCStCtRpZU",
+        "Variation of Parameters - 1st order linear nonhom":"https://youtu.be/dWpZwu6vqoA",
+        "Variation of Parameters - First Order Linear NonHom Example":"https://youtu.be/VSKGWcPAyKM"
+    },
+    "readings": [
+        "1.2",
+        "2.1"
+    ],
+    "advice": [
+        "Differential Equations is largely about identification of the problem.",
+        "There'll be techniques to learn too, but knowing will be more than half the battle."
+    ],
+    "work": {
+        "1.2": "1, 2a-e and g, 3 eop, 4 eop, 5ad, 7",
+        "2.1": "1-11 odd, 16, 17, 19, 20, 24, 31-33, 36, 47"
+    }
+}
+]

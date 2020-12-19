@@ -11,8 +11,9 @@ class Module:
         work - a dictionary with 'chapter.section':'string of problems' the problem string is assumed to be formatted
     """
 
-    def __init__(self, name='', readings=[], advice=[], work={}):
+    def __init__(self, name='', videos={}, readings=[], advice=[], work={}):
         self.name = name
+        self.videos = videos
         self.readings = readings
         self.advice = advice
         self.work = work
@@ -45,6 +46,8 @@ class Module:
             index - integer for the week of the module
         """
         self.header_html(file, index)
+        if self.videos:
+            self.videos_html(file)
         if self.readings:
             self.readings_html(file)
         if self.advice:
@@ -99,15 +102,25 @@ class Module:
         """Helper function for html method. Generates footer."""
         print(f'<!-- End of Module {index} -->', file=file)
 
+    def videos_html(self, file):
+        """Helper function for html method. Generates itemized video links."""
+        # videos header
+        print("\t<h3>Videos</h3>", file=file)
+        # itemized video link list
+        print('\t' * 2 + "<ul>", file=file)
+        for name, link in self.videos.items():
+            print('\t' * 3 + f"<li><a class=\"inline_disabled\" href=\"{link}\">{name}</a></li>", file=file)
+        print('\t' * 2 + "</ul>\n", file=file)
+
     def readings_html(self, file):
-        """Helper function for latex method. Generates readings statement."""
+        """Helper function for html method. Generates readings statement."""
         # readings header
         print("\t<h3>Readings</h3>", file=file)
         # readings statement
         print('\t' * 2 + f"<p>Please read sections {comma_seperate_list(self.readings)}.</p>\n", file=file)
 
     def advice_html(self, file):
-        """Helper function for latex method. Generates itemized advice."""
+        """Helper function for html method. Generates itemized advice."""
         # advice header
         print("\t<h3>Words of Advice</h3>", file=file)
         # itemized advice
@@ -117,7 +130,7 @@ class Module:
         print('\t' * 2 + "</ul>\n", file=file)
 
     def work_html(self, file):
-        """Helper function for latex method. Generates itemized work assignments."""
+        """Helper function for html method. Generates itemized work assignments."""
         # work header
         print("\t<h3>Work</h3>", file=file)
         # itemized work list
