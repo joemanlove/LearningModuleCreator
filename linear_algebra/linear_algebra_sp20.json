@@ -6,6 +6,10 @@
         1.2,
         1.3
     ],
+    "videos":{
+        "Introduction to Vectors":"https://youtu.be/tfHVKFhmLu4",
+        "Lengths and Dot Products":"https://youtu.be/dPGgYun1iXQ"
+    },
     "advice": [
         "The picture for problem 1.1 23 is on the previous page.",
         "The whole course is about linear combinations and vectors, don't slack off here.",
