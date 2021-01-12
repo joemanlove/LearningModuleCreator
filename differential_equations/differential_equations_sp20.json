@@ -1,0 +1,362 @@
+[
+{
+    "name": "Linear First Order",
+    "videos": {
+        "What's a Differential Equation?":"https://youtu.be/MwRA6Jlw4WQ",
+        "Exponential Growth Population Model - Intro":"https://youtu.be/8WpanRkPXtU",
+        "Verification of Solutions - Example (Newton's Cooling)":"https://youtu.be/2WgMskR4_hs",
+        "First Order Linear Hom and Non - Vocab":"https://youtu.be/KOlnOVyD63I",
+        "First Order Linear Hom - General Technique":"https://youtu.be/RCZKR_uspoU",
+        "First Order Linear NonHom - Example":"https://youtu.be/DYCStCtRpZU",
+        "Variation of Parameters - 1st order linear nonhom":"https://youtu.be/dWpZwu6vqoA",
+        "Variation of Parameters - First Order Linear NonHom Example":"https://youtu.be/VSKGWcPAyKM"
+    },
+    "readings": [
+        "1.2",
+        "2.1"
+    ],
+    "advice": [
+        "Differential Equations is largely about identification of the problem.",
+        "There'll be techniques to learn too, but knowing will be more than half the battle."
+    ],
+    "work": {
+        "1.2": "1, 2a-e and g, 3 eop, 4 eop, 5ad, 7",
+        "2.1": "1-11 odd, 16, 17, 19, 20, 24, 31-33, 36, 47"
+    }
+},
+{
+    "name": "Seperable Equations and ∃! Theorem",
+    "videos": {
+        "Separation of Variables - Idea and Example":"https://youtu.be/eKKMSsJHsQ4",
+        "Separation of Variables - Example":"https://youtu.be/0QNqNh7JHO4",
+        "Existence and Uniqueness (Take One) - 2.3":"https://youtu.be/EQuwYNPl03U",
+        "Existence and Uniqueness (Take One) - 2.3 Examples":"https://youtu.be/soI9vI73HNY"
+    },
+    "readings": [
+        "2.2",
+        "2.3"
+    ],
+    "advice": [
+        "Separation of variables is a technique that we'll keep seeing at the end of problems.",
+        "The existence and uniqueness theorem is much more crucial than it seems.",
+        "If we didn't know a solution existed, we might just be wasting time trying to find it.",
+        "If we weren't sure that solutions were unique, we couldn't trust the results from models.",
+        "Don't confuse these with the idea that the solution we get from a model must match the reality of the situation. Knowing that model solutions are reasonable is a much bigger fish.",
+        "Chaotic dynamics are still a thing even with the existence and uniqueness theorems.",
+        "There are several Existence and Uniqueness theorems in the subject, this won't be our last."
+    ],
+    "work": {
+        "2.2": "1-6, 11-12, 17-23 odd, 29",
+        "2.3": "1-13"
+    }
+},
+{
+    "name": "Special Forms and Exactness",
+    "videos": {
+        "Bernoulli Equations - Idea":"https://youtu.be/VdHIILPbRMA",
+        "Bernoulli - Probably the Better Way":"https://youtu.be/u1R1Bwyp1Z4",
+        "Homogeneous Non Linear - Idea":"https://youtu.be/bYuyttoL-pE",
+        "Homogeneous Nonlinear - Example":"https://youtu.be/wZ6t43rMPiA",
+        "Exact Equations":"https://youtu.be/0Mn1aGkjL0Q",
+        "Exact Equations - Example":"https://youtu.be/UcGjTcPR7vQ",
+        "Exact Equations - Example (2.5 #17)":"https://youtu.be/5OpuW746FOw"
+    },
+    "readings": [
+        "2.4",
+        "2.5"
+    ],
+    "advice": [
+        "'Homogeneous Non-Linear' and 'Homogeneous Linear' sound really similar but are pretty different.",
+        "If you didn't take Calc 3 you'll need to understand partial derivatives to get exactness. (There's some videos for this in the Calc 3 playlist.)"
+    ],
+    "work": {
+        "2.4": "1-4, 7-11, 15, 18, 23, 24, 28, 55, 57",
+        "2.5": "1-21 odd, 29, 33"
+    }
+},
+{
+    "name": "Integrating Factors and First Order Applications",
+    "videos": {
+        "Integrating Factors - Idea":"https://youtu.be/v312U23Xbew",
+        "Integrating Factors - Suggestions":"https://youtu.be/tgznpePnOvQ",
+        "Integrating Factor - Example":"https://youtu.be/CGrY5XQuWR4",
+        "Newton's Cooling":"https://youtu.be/bfQHkJJ47Lg",
+        "Applications of 1st Order - Example (4.1 #12)":"https://youtu.be/c5Fjw901sfs",
+        "Applications of First Order ODEs - Summary":"https://youtu.be/2SCeCRf1_dg",
+        "Compartmental Analysis":"https://youtu.be/NwVnYXE4iMw"
+    },
+    "readings": [
+        "2.6",
+        "4.1",
+        "4.2"
+    ],
+    "advice": [
+        "Integrating factors are a powerful technique, but not a time efficient one for general differential equations.",
+        "The search for an integrating factor is a little bit akin to brute force password cracking: Will it eventually work? - Yes. Will the heatdeath of the universe occur beforehand? Quite possibly...",
+        "Applications of ODEs are notoriously tricky, but nobody solves differential equations for funzies, they solve des because they'll understand the world a little better once they do.",
+        "My advice for solving applications: Don't panic and write down some math, you don't have to know how to solve it as you write it down.",
+        "Tank mixing problems come up in a ton of places in Engineering, get gud at them."
+    ],
+    "work": {
+        "2.6":"3-16 all",
+        "4.1":"1-3, 8-12, 14-20",
+        "4.2":"1-5"
+    }
+},
+{
+    "name": "2olcchodes pronounced 'ta-wak-el-chodes'",
+    "videos": {
+        "Second order Linear Const Coefficient Homogeneous ODEs - aka Springs":"https://youtu.be/gcJzb43IakE",
+        "Hooke's Law Preview":"https://youtu.be/4PRJ2--hbmM",
+        "Euler's Identity and Formula":"https://youtu.be/o-x4M9Vzz3g",
+        "2nd Order Linear Constant Coefficient - Cases and Solutions":"https://youtu.be/uWyTtSk6w54",
+        "2olcchode - Example (5.2 #1)":"https://youtu.be/T49y8eBF5rk",
+        "Repeated Roots - Example (5.2 #7) (You can stop watching after 5:45.)":"https://youtu.be/E1MO0c8ww-4",
+        "2nd Order Linear Constant Coefficient - Example (5.2 #5)":"https://youtu.be/jaIHCP8bvgA",
+        "Pendulums - (Why two initial conditions?)":"https://youtu.be/CBiz53t3Iyk",
+        "Existence and Uniqueness for 2nd Order Linear ODEs":"https://youtu.be/n4f4pcaZGtQ",
+        "Review of Techniques up to 2olcchode":"https://youtu.be/doAX8qCc4T8"
+    },
+    "readings": [
+        "5.1",
+        "5.2"
+    ],
+    "advice": [
+        "I didn't make this word up. Students did. I know it's silly, but it seems to cement the concept. :shrug:",
+        "I'm also aware that the letters also aren't in that order. Complaints like this are why we can't have fun.",
+        "2olcchodes are not to be confused with 2olccnhodes (notice the additional 'n') pronounced 'ta-wak-lin-chodes', which are covered in 5.3.",
+        "This section could also be called 'Springs and Pendulums', but I saved that for the applications."
+    ],
+    "work": {
+        "5.1": "1-4, 9, 10, 11, 13, 17, 24",
+        "5.2": "1-22, 23-27 odd, 29, 33, 34"
+    }
+},
+{
+    "name": "2olccnhodes pronounced 'ta-wak-lin-chodes'",
+    "videos": {
+        "General Solutions for Second Order Linear ODEs":"https://youtu.be/aLETAWVUwvs",
+        "Superposition Principle":"https://youtu.be/68HFeSI_Vf0",
+        "Second Order Linear Non Hom ODE - Example":"https://youtu.be/UlBQBHuI_Qg",
+        "Variation of Parameters":"https://youtu.be/SRy864rp-aQ",
+        "Variation of Parameters - Example":"https://youtu.be/NqeCzo7rENs",
+        "Variation of Parameters (2nd Order) - Example":"https://youtu.be/0KVi_PKFqwE",
+        "Proof of Superposition Principle - (5.3 #39)":"https://youtu.be/cTMzoIgx2pw"
+    },
+    "readings": [
+        "5.3",
+        "5.7",
+        "5.4 is optional"
+    ],
+    "advice": [
+        "The methods outlined in the homework for 5.3 are the basis of a technique called Method of Undetermined Coefficients.",
+        "MUDCs is an effective method for solving a great many 2olccnhodes, but I personally prefer Variation of Parameters.",
+        "If you'd like to make your own determination about this, MUDCs is covered in 5.4 and 5.5. You may well run across it in Engineering classes.",
+        "VOP is the prefered technique in my mind because it lends itself to higher order situations and is a lot easier to remember because MUDCs invlives lots of cases..."
+    ],
+    "work": {
+        "5.3": "1-4, 16, 17, 39",
+        "5.7": "1, 3, 7, 8, 17, 18, 23, 25"
+    }
+},
+{
+    "name": "Springs and Pendulums",
+    "videos": {
+        "2nd Order ODEs - Thoughts about Springs":"https://youtu.be/5-PEdtq6R58",
+        "Tongue Weight Safety Demonstration (Antidamped Oscilator)":"https://youtu.be/w9Dgxe584Ss"
+    },
+    "readings": [
+        "6.1",
+        "6.2"
+    ],
+    "advice": [
+        
+    ],
+    "work": {
+        "6.1": "2, 4, 6, 8, 13",
+        "6.2": "6, 9, 10, 15, 20"
+    }
+},
+{
+    "name": "Midterm and Series Solutions",
+    "videos": {
+        "Remember Taylor Series?":"https://youtu.be/ga3t_rREDUY",
+        "Series Solutions - Existence":"https://youtu.be/6fsQ9-ucmxY",
+        "Series Solutions - Example":"https://youtu.be/PedUjTb-tXY",
+        "Series Solutions - Definitions and Theorem":"https://youtu.be/XLzJudKmxzo"
+    },
+    "readings": [
+        "7.1",
+        "7.2"
+    ],
+    "advice": [
+        "In my mind, chapter 7 is a bit too complicated for this class, but it's an important concept, so we'll dip our toes in.",
+        "The idea of a power series solution to an equation is a pretty common basis for coding algorithms, but it's really hard to do by hand.",
+        "If you're headed into applied math, this chapter would be a really good after the course self study."
+    ],
+    "work": {
+        "7.1": "1abce, 20, 21",
+        "7.2": "1-3"
+    }
+},
+{
+    "name": "Laplace Transforms",
+    "videos": {
+        "Laplace Transforms - Idea":"https://youtu.be/0bc-N_huXsw",
+        "Laplace Transforms - Definition":"https://youtu.be/0uFHr38k1Rs",
+        "Laplace Transform of f(t)=t":"https://youtu.be/ioM6fzVcawE",
+        "Inverse Laplace - Idea":"https://youtu.be/-4wWiLOy2u8",
+        "Linearity of Inverse Laplace, (warnings about interchange of limits)":"https://youtu.be/Wf9xnLHmzYY",
+        "Linearity of Inverse Laplace - Easy Example":"https://youtu.be/Ih1EqvlhSlc",
+        "Linearity of Inverse Laplace - Medium Example":"https://youtu.be/a6oS6oFCOY8",
+        "Inverse Laplace - PFD Example (8.2 #3a)":"https://youtu.be/vcISJPnsdXk"
+    },
+    "readings": [
+        "8.1",
+        "8.2"
+    ],
+    "advice": [
+        "The Laplace transform doesn't necessarily make a problem easier, but it does shift the difficulty to algebraic techniques, which are a bit simpler.",
+        "The Laplace Transform is also the only tool we have to deal with disconinuous forces, which are encoutered everyday.",
+        "You literally cannot go to the grocery store without encountering a discontinuous forcing term."
+    ],
+    "work": {
+        "8.1": "1 and 2eop, 5bc, 6, 15, 16",
+        "8.2": "1 all, 2-4 eop, and 6-8 eop"
+    }
+},
+{
+    "name": "IVPs and Unit Steps",
+    "videos": {
+        "Laplace Transform of y'":"https://youtu.be/PXEauuK5yPM",
+        "Laplace Transforms of Derivatives":"https://youtu.be/fxpWBrkOtT4",
+        "Laplace - Solving an IVP":"https://youtu.be/98SI3hh-JFU",
+        "Unit Step Functions":"https://youtu.be/rJRXgw1f2dc",
+        "Laplace Transform of Unit Step Functions":"https://youtu.be/rJRXgw1f2dc",
+        "Laplace Transform of Unit Step Functions - Example":"https://youtu.be/s_nae2DQUqc",
+        "Unit Step Laplace - Example":"https://youtu.be/ZXHeGO70dDE"
+    },
+    "readings": [
+        "8.3",
+        "8.4"
+    ],
+    "advice": [
+        "The whole point of this technique is to solve IVPs.",
+        "The Laplace transform relies on you having those initial values in order to solve des.",
+        "Unit step functions model switched behaviors.",
+        "If you've never seen a switch before, it's a stick that has two positions, usually one makes a thing off and the other makes the thing on.",
+        "You can think of a place you've seen a switch before right?"
+    ],
+    "work": {
+        "8.3": "3-36 by 6s",
+        "8.4": "7-14 odds, 19, 20, 29"
+    }
+},
+{
+    "name": "Piecewise Forcing and Dirac Deltas",
+    "videos": {
+        "Dirac Delta Function and the Laplace thereof":"https://youtu.be/Xz8DZysaB2w",
+        "Solving IVPs with Laplace Transforms - Example (8.7 #21)":"https://youtu.be/3LngJfbVP64",
+        "Laplace IVP with Dirac - Example (8.7 #1)":"https://youtu.be/0EWXtigGHP8",
+        "Similarities between Laplace and Standard 2olcchode Technique":"https://youtu.be/Z_cr2QfZfWw"
+    },
+    "readings": [
+        "8.5",
+        "8.7"
+    ],
+    "advice": [
+        "If you own a hammer, this is a model you need.",
+        "Given the prevalence of procussive problem solving in engineering fields, Dirac's Delta function is underappreciated."
+    ],
+    "work": {
+        "8.5": "1-5, 7",
+        "8.7": "1-7 odd, 20, 24"
+    }
+},
+{
+    "name": "Systems of Differential Equations",
+    "videos": {
+        "Interconnected Tanks - Motivation for Systems of DEs":"https://youtu.be/R9nqnn442TY",
+        "Systems of DEs from Higher Order DEs":"https://youtu.be/6nBm3WnBxb4",
+        "Linear Algebra (Super Fast)":"https://youtu.be/Y0I6yqopj5k",
+        "Systems of Differential Equations":"https://youtu.be/OLloTihPX58",
+        "Systems of DEs expressed as a Matrix Equation":"https://youtu.be/C-kTzotPdKk"
+    },
+    "readings": [
+        "10.1",
+        "10.2"
+    ],
+    "advice": [
+        "Systems of des are far and away the most common case. It's very rare for a problem to involve a single value changing in time.",
+        "A linear algebra class is a good idea.",
+        "Interconnected tanks are really really cool.",
+        "Markov processes are another common model that feel very similar to interconnected tanks."
+    ],
+    "work": {
+        "10.1": "1, 2, 5abc",
+        "10.2": "1 bd, 2 bd, 3a, 4a, 5bd, 8eop (start with b)"
+    }
+},
+{
+    "name": "Socchodes pronounced 'Sock-Hodes'",
+    "videos": {
+        "Solving Systems of DEs with e to a Matrix Power":"https://youtu.be/1ELzsy7rXOo",
+        "Solving Systems of DEs - Example Nilpotent Matrix":"https://youtu.be/_wj-B2PmzzY",
+        "Solving Systems with EigenPairs - Why Eigenpairs?":"https://youtu.be/Vf6uITiQ3jQ",
+        "Solving Systems with EigenPairs - Idea and Example (10.4 #4)":"https://youtu.be/G8L_uC40ing",
+        "ODE Systems with Eigenpairs - Example (10.4 #2)":"https://youtu.be/VgYAEJ2EDa0",
+        "ODE Systems with Eigenpairs - Example (10.4 #17)":"https://youtu.be/xuYHcuqLdXg"
+    },
+    "readings": [
+        "10.3",
+        "10.4"
+    ],
+    "advice": [
+        "I bet you wish you'd signed up for linear... :)",
+        "Eigenpairs are super cool and generally fairly hard to find.",
+        "If you're in Linear I bet you can see why we'd want a Diagnalization right about now...",
+        "After you've calculated a few eignepairs "
+    ],
+    "work": {
+        "10.3": "1, 7",
+        "10.4": "1-8 (use a computer for #8s eigenvalues), 16-19"
+    }
+},
+{
+    "name": "More Socchodes",
+    "videos": {
+        "ODE Systems needing Generalized Eigenvectors - Idea":"https://youtu.be/1Hg0_ndzk4s",
+        "ODE Systems needing Generalized EigenVectors - Example (10.5 #1)":"https://youtu.be/ogq4CM07mhM",
+        "TODO":"https://youtu.be/dQw4w9WgXcQ"
+    },
+    "readings": [
+        "10.5",
+        "10.6"
+    ],
+    "advice": [
+        "There's a real rabbit hole to fall down here about the algebraic and geometric multiplicity of eigenvalues.",
+        "We're going to avoid it for the most part, but I'd feel bad not pointing it out."
+    ],
+    "work": {
+        "10.5": "1-4, 13, 14",
+        "10.6": "1-3, 9, 17, 18"
+    }
+},
+{
+    "name": "Review for Final",
+    "videos": {
+
+    },
+    "readings": [
+
+    ],
+    "advice": [
+        "You got this.",
+        "You've got gud.",
+        "Seriously though, good work for making it to the end. I really appreciate all the effort."
+    ],
+    "work": {
+
+    }
+}
+]

@@ -19,7 +19,8 @@ import os
 PATH = os.path.dirname(__file__) + '/'
 
 # change the input file name variable to the json you'd like to generate from
-INPUT_FILE_NAME = "linear_algebra/linear_algebra.json"
+INPUT_FILE_NAME = "differential_equations/differential_equations_sp20.json"
+# INPUT_FILE_NAME = "linear_algebra/linear_algebra_sp20.json"
 INPUT_FILE_PATH = os.path.join(PATH, INPUT_FILE_NAME)
 
 # removes the json extension
