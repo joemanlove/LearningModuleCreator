@@ -1,4 +1,5 @@
 from utilities import comma_seperate_list
+from jinja2 import Template
 
 
 class Module:
@@ -55,6 +56,27 @@ class Module:
         if self.work:
             self.work_html(file)
         self.footer_html(file, index)
+
+    def html_template(self, file, index):
+        """
+        HTML code generation using template, writes html code for the module assuming that the module is week index.
+        Note, the latex code in the advice section will not render automatically with html at this time.
+        Arguments:
+            file - a file stream for the output
+            index - integer for the week of the module
+        """
+        # Read the raw template
+        with open('templates/module.html', 'r') as f:
+            string = f.read()
+
+        # Convert to jinja2 template
+        template = Template(string, trim_blocks=True, lstrip_blocks=True)
+
+        # Render the template
+        x = template.render(obj=self, i=index)
+
+        # Print to the target file
+        print(x, file=file)
 
     def header_latex(self, file, index):
         """Helper function for latex method. Generates header."""

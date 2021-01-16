@@ -1,0 +1,36 @@
+<!-- Module {{i}} - {{obj.name}} Begins Here -->
+<h2>Week {{i}} - {{obj.name}}</h2>
+
+    {% if obj.videos %}
+    <h3>Videos</h3>
+        <ul>
+            {% for name, link in obj.videos.items() %}
+            <li><a class="inline_disabled" href="{{link}}">{{name}}</a></li>
+            {% endfor %}
+        </ul>
+    
+    {% endif %}
+    {% if obj.readings %}
+	<h3>Readings</h3>
+		<p>Please read sections{% for read in obj.readings %}{% if loop.last and loop.index > 1 %} and{% endif %} {{read}}{% if not loop.last and loop.length > 2 %},{% endif %}{% endfor %}.</p>
+    
+    {% endif %}
+    {% if obj.advice %}
+	<h3>Words of Advice</h3>
+		<ul>
+            {% for item in obj.advice %}
+			<li>{{item}}</li>
+			{% endfor %}
+        </ul>
+
+    {% endif %}
+    {% if obj.work %}
+	<h3>Work</h3>
+		<ul>
+            {% for key, value in obj.work.items() %}
+            <li>In section {{key}}, please do problems {{value}}.</li>
+			{% endfor %}
+        </ul>
+
+    {% endif %}
+<!-- End of Module {{i}} -->
